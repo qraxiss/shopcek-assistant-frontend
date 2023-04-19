@@ -9,4 +9,4 @@ def app(page: ft.Page):
 
 
 
-ft.app(target=app)
+ft.app(target=app , view=ft.WEB_BROWSER, port=8502, assets_dir="assets")
