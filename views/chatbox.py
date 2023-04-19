@@ -4,6 +4,7 @@ import string
 
 from controllers import chat, new_chat
 
+color = "#67dfe2"
 
 def random_id() -> str:
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=15))
@@ -102,6 +103,7 @@ class ChatBox(ft.UserControl):
                 expand=True,
                 autofocus=True,
                 shift_enter=True,
+                color=color
             )
 
         return self._textbox

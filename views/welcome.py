@@ -2,6 +2,7 @@ import flet as ft
 
 from .logo import Logo
 
+color = "#67dfe2"
 
 class Welcome(ft.UserControl):
     welcome_header = "Welcome to ShopAI"
@@ -20,7 +21,7 @@ class Welcome(ft.UserControl):
         if not hasattr(self, '_text'):
             self._text = ft.Column([
                 ft.Text(self.welcome_header,
-                        color=ft.colors.BLUE_300,
+                        color=color,
                         size=25,
                         weight=ft.FontWeight.W_900,
                         selectable=True,
