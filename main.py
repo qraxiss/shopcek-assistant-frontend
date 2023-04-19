@@ -1,10 +1,10 @@
 import flet as ft
 
-from views import Welcome, ChatBox
+from views import Welcome, ChatBox, DefaultMessage
 
 def app(page: ft.Page):
     page.scroll = "auto"
-    page.add(Welcome(), ChatBox())
+    page.add(Welcome(), ChatBox(page))
     page.update()
 
 

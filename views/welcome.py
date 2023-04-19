@@ -4,6 +4,7 @@ from .logo import Logo
 
 color = "#67dfe2"
 
+
 class Welcome(ft.UserControl):
     welcome_header = "Welcome to ShopAI"
     welcome_Text = "ShopAI is powered by OpenAI and trained by \nShopcek to enhance your experience and provide \nquick responses to any inquiries you may have. \nFeel free to utilize ShopAI whenever you need \nassistance or have any questions about our services. \nWe are always here to help!"
@@ -12,7 +13,7 @@ class Welcome(ft.UserControl):
         super().__init__(*args, **kwargs)
 
     def build(self):
-        return ft.Container(ft.Row([self.text, self.logo],
+        return ft.Container(ft.Row([self.text,self.logo],
                                    alignment=ft.MainAxisAlignment.CENTER,
                                    vertical_alignment=ft.CrossAxisAlignment.END))
 
